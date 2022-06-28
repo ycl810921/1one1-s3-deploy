@@ -4,21 +4,21 @@ phases:
   install:
     commands:
       - echo update npm...
-      - npm install -g n
-      - n latest
-      - npm update -g npm
+      - sudo npm install -g n
+      - sudo n latest
+      - sudo npm update -g npm
       - echo node -v
-      - node -v
+      - sudo node -v
       - echo npm -v
-      - npm -v
+      - sudo npm -v
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install
+      - sudo npm install
   build:
     commands:
       - echo build start
-      - npm run build
+      - sudo npm run build
       - echo build completed
   post_build:
     commands:
