@@ -4,8 +4,8 @@ phases:
   install:
     commands:
       - echo update npm...
-      - sudo npm install -g n
-      - sudo n latest
+      - #sudo npm install -g n
+      - #sudo n latest
       - sudo npm update -g npm
       - echo node -v
       - sudo node -v
